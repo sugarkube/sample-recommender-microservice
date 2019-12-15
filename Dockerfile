@@ -1,6 +1,6 @@
 FROM python:3.6.9-alpine3.9
 
-RUN mkdir /opt/app && pip install flask
+RUN mkdir /opt/app && pip install --no-cache-dir flask
 COPY . /opt/app
 WORKDIR /opt/app
 
